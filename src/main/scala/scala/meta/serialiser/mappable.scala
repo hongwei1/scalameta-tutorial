@@ -16,6 +16,7 @@ class mappable extends StaticAnnotation {
     val res = q"""
       ..$mods class $tName(..$params) {
         def toMap(): Map[String, Any] = Map[String, Any](..$keyValues)
+        def toMap2(): Map[String, Any] = Map[String, Any](..$keyValues)
       }
     """
 
