@@ -27,7 +27,7 @@ class schema extends StaticAnnotation {
          ..$mods object $ename extends $newT
        """
 
-    println("============== result ==============")
+    println("============== result schema ==============")
     println("res: " +res)
     println("====================================")
     res

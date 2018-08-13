@@ -6,6 +6,9 @@ val q"..$mods object $ename extends $template" = q"object MyObj { case class A()
 //ename: scala.meta.Term.Name = MyObj
 //template: scala.meta.Template = { case class A() }
 
+println(mods)
+println(ename)
+println(template)
 val generatedClass: Defn.Class =
       q"""
          case class B(b: Int, bb: Int){def add = 1+1}
